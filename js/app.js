@@ -41,4 +41,3 @@ function addEvent(element, evnt, funct){
   );
 
   document.getElementById("mivideo").style.display = "none";
-Footer
