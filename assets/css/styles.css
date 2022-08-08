@@ -43,8 +43,14 @@ p {
 
 body {
     background: linear-gradient(270deg, #32C225, #1D8202, #186801, #135501);
+    height: 640px;
+}
 
-
+.main {
+    /* height: 175%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 a {
@@ -76,8 +82,8 @@ a {
     flex-direction: column;
     list-style: disc;
     align-items: flex-start;
-    line-height: 0px;
-    margin-top: 18px;
+    line-height: 9px;
+    margin-top: 0px;
     font-size: 11px;
 }
 
@@ -227,28 +233,30 @@ ul {
 .info1 {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
+    align-items: flex-start;
 
 }
 
 .info {
     font-size: 1rem;
     font-weight: bold;
+    margin-top: 9px;
 }
 
 /* INFO 2  */
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: 2.2fr 0.8fr;
     justify-items: center;
 }
 
 .grid2 {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    height: 20rem;
+    grid-template-columns: 2.2fr 0.8fr;
     justify-items: center;
+    align-content: center;
 }
 
 .eventos {
@@ -257,17 +265,17 @@ ul {
     flex-direction: column;
     list-style: disc;
     align-items: flex-start;
-    line-height: 12px;
-    font-size: 11px;
+    line-height: 19px;
+    font-size: 17px;
+    justify-content: center;
 
 }
 
 .paraLogoCont {
     display: flex;
-    justify-content: center;
     align-items: center;
-    margin-top: 0rem;
-    max-width: 9rem;
+    margin-top: -13rem;
+    max-width: 8rem;
     width: 100%;
 }
 
@@ -289,7 +297,6 @@ ul {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    margin-top: 2rem;
 }
 
 .patrocinadores {
@@ -319,7 +326,7 @@ ul {
     }
 
     .logoPatronCont {
-        height: 62%;
+        height: 100%;
     }
 
 }
@@ -370,13 +377,14 @@ ul {
 
 
 @media (min-width: 728px) {
-    .headerDesktop{
+    .headerDesktop {
         background-image: url(../img/151288405_1362337240790265_468300053441466089_n.jpeg);
         max-width: 100%;
         height: 1024px;
         background-repeat: no-repeat;
     }
-    .poligono{
+
+    .poligono {
         width: 0;
         height: 0;
         border-right: 0rem solid transparent;
@@ -392,6 +400,12 @@ ul {
 }
 
 @media (max-width: 728px) {
+
+    .headerDesktop,
+    .poligono {
+        display: none;
+    }
+
     .enlaces {
         display: none;
     }
