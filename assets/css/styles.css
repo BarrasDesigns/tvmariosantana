@@ -254,7 +254,7 @@ ul {
 .grid2 {
     display: grid;
     height: 20rem;
-    grid-template-columns: 2.2fr 0.8fr;
+    grid-template-columns: 2fr 1fr;
     justify-items: center;
     align-content: center;
 }
