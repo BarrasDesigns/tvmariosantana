@@ -72,12 +72,13 @@ a {
 
 .logros {
     width: 100%;
-    height: 27rem;
     display: flex;
     flex-direction: column;
     list-style: disc;
     align-items: flex-start;
-    /* word-break: break-all; */
+    line-height: 0px;
+    margin-top: 18px;
+    font-size: 11px;
 }
 
 ul {
@@ -88,30 +89,6 @@ ul {
     display: flex;
     justify-content: center;
 }
-
-@media (max-width: 371px) {
-    .objectfit {
-        justify-content: center;
-        margin-top: -6rem;
-    }
-
-    .title {
-        display: none;
-    }
-
-    nav {
-        margin-bottom: 19% !important; 
-    }
-}
-
-@media (min-width: 728px) {
-    /*   li {
-      background-color: #03826A;
-    } */
-}
-
-
-
 
 /* Header  */
 .wrapper {
@@ -163,7 +140,7 @@ ul {
     margin: 0;
     padding: 1rem;
     animation: neon5 1.5s ease-in-out infinite;
-    font-size: 2rem;
+    font-size: 1rem;
     font-weight: 700;
 
 
@@ -195,7 +172,7 @@ ul {
 .objectfit {
     display: flex;
     justify-content: space-around;
-    margin-top: -5rem;
+    margin-top: -5.5rem;
     align-items: center;
 }
 
@@ -230,8 +207,7 @@ ul {
 /* LINKS  */
 
 
-
-ul {
+.redes {
     list-style: none;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -239,7 +215,7 @@ ul {
     justify-content: center;
     align-items: center;
     align-content: center;
-    grid-auto-rows: 6rem;
+    grid-auto-rows: 4rem;
     padding: 0px;
 }
 
@@ -263,22 +239,42 @@ ul {
 
 /* INFO 2  */
 
+.grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+}
+
 .grid2 {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    /* grid-template-rows: 1rem; */
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+}
+
+.eventos {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    list-style: disc;
+    align-items: flex-start;
+    line-height: 12px;
+    font-size: 11px;
+
 }
 
 .paraLogoCont {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 2rem;
+    margin-top: 0rem;
+    max-width: 9rem;
+    width: 100%;
 }
 
 .paraLogo {
     max-width: 100%;
 }
+
 .entrevista {
     display: flex;
     flex-direction: column;
@@ -287,11 +283,7 @@ ul {
 }
 
 /* INFO 3  */
-.grid3 {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    /* grid-template-rows: 1rem; */
-}
+
 
 .logoPatronCont {
     display: flex;
@@ -306,32 +298,29 @@ ul {
 
 
 /* MEDIA QUERIES  */
-@media (max-width: 371px) {
 
+@media (max-width: 371px) {
     .objectfit {
         justify-content: center;
-        margin-top: -6rem;
+    }
+
+    .objectfit>img {
+        width: 7rem;
+        height: 8rem;
+
     }
 
     .title {
         display: none;
     }
 
-    .grid2,
-    .grid3 {
-        grid-template-columns: repeat(1, 1fr) !important;
+    nav {
+        margin-bottom: 19% !important;
     }
 
     .logoPatronCont {
-        height: 22rem;
+        height: 62%;
     }
-    .rutasEnlaces {
-        /* margin-top: 68%; */
-    }
-    nav {
-        margin-bottom: 5rem;
-    }
-
 
 }
 
@@ -346,14 +335,55 @@ ul {
         display: none;
     }
 
-    ul {
+    .redes {
         grid-template-columns: repeat(4, 1fr);
+    }
+
+    .galeria__titulo {
+        font-size: 2rem;
+    }
+
+    .grid {
+        /* display: grid; */
+        grid-template-columns: 2fr 1fr;
+        /* justify-content: center; */
+    }
+
+    .logros {
+        line-height: 9px;
+        font-size: 15px;
+    }
+
+    .paraLogoCont {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 0rem;
+        width: 100%;
+        height: 53%;
+        max-width: 7rem;
     }
 
 
 }
 
+
 @media (min-width: 728px) {
+    .headerDesktop{
+        background-image: url(../img/151288405_1362337240790265_468300053441466089_n.jpeg);
+        max-width: 100%;
+        height: 1024px;
+        background-repeat: no-repeat;
+    }
+    .poligono{
+        width: 0;
+        height: 0;
+        border-right: 0rem solid transparent;
+        border-top: 0rem solid transparent;
+        border-left: 73rem solid transparent;
+        border-bottom: 60rem solid #1D8202;
+    }
 
     .header,
     .objectfit {
@@ -365,7 +395,7 @@ ul {
     .enlaces {
         display: none;
     }
-    
+
     nav {
         margin-bottom: 38%;
     }
