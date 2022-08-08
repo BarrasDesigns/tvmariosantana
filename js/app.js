@@ -1,3 +1,4 @@
+// REPRODUCE VIDEO 
 function getFullscreenElement() {
     return document.fullscreenElement
     || document.webkitFullscreenElement
@@ -41,3 +42,4 @@ function addEvent(element, evnt, funct){
   );
 
   document.getElementById("mivideo").style.display = "none";
+

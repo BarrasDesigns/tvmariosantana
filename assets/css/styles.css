@@ -80,11 +80,13 @@ a {
     width: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     list-style: disc;
     align-items: flex-start;
     line-height: 9px;
     margin-top: 0px;
     font-size: 11px;
+    height: 100%;
 }
 
 ul {
@@ -214,14 +216,15 @@ ul {
 
 
 .redes {
-    list-style: none;
+    height: 18rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 4rem;
     justify-items: center;
     justify-content: center;
     align-items: center;
     align-content: center;
-    grid-auto-rows: 4rem;
+    list-style: none;
     padding: 0px;
 }
 
@@ -248,15 +251,13 @@ ul {
 .grid {
     display: grid;
     grid-template-columns: 2.2fr 0.8fr;
-    justify-items: center;
+    height: 18rem;
 }
 
 .grid2 {
     display: grid;
-    height: 20rem;
-    grid-template-columns: 2fr 1fr;
-    justify-items: center;
-    align-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    height: 22rem
 }
 
 .eventos {
@@ -266,17 +267,17 @@ ul {
     list-style: disc;
     align-items: flex-start;
     line-height: 19px;
-    font-size: 17px;
+    font-size: 15px;
     justify-content: center;
+    height: 100%;
 
 }
 
 .paraLogoCont {
     display: flex;
     align-items: center;
-    margin-top: -13rem;
-    max-width: 8rem;
-    width: 100%;
+    margin-top: 0rem;
+    max-width: 10rem;
 }
 
 .paraLogo {
