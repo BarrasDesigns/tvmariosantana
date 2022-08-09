@@ -46,6 +46,7 @@ h3 {
     flex-direction: column;
     line-height: 0px;
 }
+
 .subtitulo {
     color: white;
     font-size: 19px;
@@ -361,11 +362,13 @@ ul {
         height: 8rem;
 
     }
+
     .galeria__subtitulo,
     .subtitulo {
         font-size: 15px;
 
     }
+
     .subtitulo {
         line-height: 17px;
     }
@@ -391,6 +394,11 @@ ul {
         background-position: center;
     }
 
+    .subtitulo {
+        line-height: 31px;
+        font-size: 17px;
+    }
+
     .title2 {
         display: none;
     }
@@ -402,9 +410,10 @@ ul {
     .galeria__titulo {
         font-size: 2rem;
     }
+
     .galeria__subtitulo {
         font-size: 21px;
-    
+
     }
 
     .grid {
