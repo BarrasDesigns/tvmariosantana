@@ -38,6 +38,7 @@ h3 {
 
 p {
     font-family: 'Ubuntu', sans-serif;
+    font-size: 12px;
 
 }
 
@@ -180,7 +181,7 @@ ul {
 .objectfit {
     display: flex;
     justify-content: space-around;
-    margin-top: -3.5rem;
+    margin-top: -4.5rem;
     align-items: center;
 }
 
@@ -216,7 +217,7 @@ ul {
 
 
 .redes {
-    height: 18rem;
+    height: 16rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: 4rem;
@@ -241,7 +242,7 @@ ul {
 }
 
 .info {
-    font-size: 1rem;
+    font-size: 14px;
     font-weight: bold;
     margin-top: 9px;
 }
@@ -281,7 +282,7 @@ ul {
 }
 
 .paraLogo {
-    max-width: 100%;
+    max-width: 126%;
 }
 
 .entrevista {
@@ -306,6 +307,32 @@ ul {
 
 
 /* MEDIA QUERIES  */
+@media (max-width: 270px) {
+    .eventos {
+        line-height: 10px;
+        font-size: 10px;
+    }
+
+    .grid,
+    .grid2 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .eventos {
+        line-height: 13px;
+    }
+
+    .logros {
+        height: 50%;
+        line-height: 0px;
+        font-size: 10px;
+    }
+
+    .logoPatronCont,
+    .paraLogo {
+        display: none;
+    }
+}
 
 @media (max-width: 371px) {
     .objectfit {
@@ -365,12 +392,12 @@ ul {
     .paraLogoCont {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
         margin-top: 0rem;
         width: 100%;
-        height: 53%;
-        max-width: 7rem;
+        height: 85%;
+        max-width: 13rem;
     }
 
 
