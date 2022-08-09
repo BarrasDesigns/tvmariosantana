@@ -36,6 +36,24 @@ h3 {
     color: white !important;
 }
 
+.objectfitCont {
+    display: flex;
+    justify-content: space-around;
+}
+
+.tituloHeader {
+    display: flex;
+    flex-direction: column;
+    line-height: 0px;
+}
+.subtitulo {
+    color: white;
+    font-size: 19px;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
 p {
     font-family: 'Ubuntu', sans-serif;
     font-size: 12px;
@@ -174,8 +192,6 @@ ul {
     height: 3rem;
     z-index: 1000;
     font-weight: 700;
-    margin-top: 4rem;
-    font-size: 21px;
 
 }
 
@@ -345,6 +361,14 @@ ul {
         height: 8rem;
 
     }
+    .galeria__subtitulo,
+    .subtitulo {
+        font-size: 15px;
+
+    }
+    .subtitulo {
+        line-height: 17px;
+    }
 
     .title {
         display: none;
@@ -377,6 +401,10 @@ ul {
 
     .galeria__titulo {
         font-size: 2rem;
+    }
+    .galeria__subtitulo {
+        font-size: 21px;
+    
     }
 
     .grid {
